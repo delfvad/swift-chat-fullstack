@@ -17,6 +17,12 @@
 		BC5378B926347A4700B7F31E /* ChatScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5378B726347A4700B7F31E /* ChatScreenModel.swift */; };
 		BC5378BF2634875800B7F31E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5378BE2634875800B7F31E /* Models.swift */; };
 		BC5378C02634875800B7F31E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5378BE2634875800B7F31E /* Models.swift */; };
+		BC5378C626361E7900B7F31E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5378C526361E7900B7F31E /* UserInfo.swift */; };
+		BC5378C726361E7900B7F31E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5378C526361E7900B7F31E /* UserInfo.swift */; };
+		BC5378CB26361EF000B7F31E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5378CA26361EF000B7F31E /* SettingsScreen.swift */; };
+		BC5378CC26361EF000B7F31E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5378CA26361EF000B7F31E /* SettingsScreen.swift */; };
+		BC5378D02636228D00B7F31E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5378CF2636228D00B7F31E /* ContentView.swift */; };
+		BC5378D12636228D00B7F31E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5378CF2636228D00B7F31E /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,9 @@
 		BC5378B02634766800B7F31E /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
 		BC5378B726347A4700B7F31E /* ChatScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenModel.swift; sourceTree = "<group>"; };
 		BC5378BE2634875800B7F31E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BC5378C526361E7900B7F31E /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		BC5378CA26361EF000B7F31E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		BC5378CF2636228D00B7F31E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +73,12 @@
 			isa = PBXGroup;
 			children = (
 				BC53788D263475F400B7F31E /* SwiftUIChatClientApp.swift */,
+				BC5378CF2636228D00B7F31E /* ContentView.swift */,
 				BC5378B02634766800B7F31E /* ChatScreen.swift */,
 				BC5378B726347A4700B7F31E /* ChatScreenModel.swift */,
 				BC5378BE2634875800B7F31E /* Models.swift */,
+				BC5378C526361E7900B7F31E /* UserInfo.swift */,
+				BC5378CA26361EF000B7F31E /* SettingsScreen.swift */,
 				BC53788F263475F700B7F31E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -197,7 +209,10 @@
 			files = (
 				BC5378B826347A4700B7F31E /* ChatScreenModel.swift in Sources */,
 				BC5378B12634766800B7F31E /* ChatScreen.swift in Sources */,
+				BC5378D02636228D00B7F31E /* ContentView.swift in Sources */,
 				BC5378A0263475F700B7F31E /* SwiftUIChatClientApp.swift in Sources */,
+				BC5378C626361E7900B7F31E /* UserInfo.swift in Sources */,
+				BC5378CB26361EF000B7F31E /* SettingsScreen.swift in Sources */,
 				BC5378BF2634875800B7F31E /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +223,10 @@
 			files = (
 				BC5378B926347A4700B7F31E /* ChatScreenModel.swift in Sources */,
 				BC5378B22634766800B7F31E /* ChatScreen.swift in Sources */,
+				BC5378D12636228D00B7F31E /* ContentView.swift in Sources */,
 				BC5378A1263475F700B7F31E /* SwiftUIChatClientApp.swift in Sources */,
+				BC5378C726361E7900B7F31E /* UserInfo.swift in Sources */,
+				BC5378CC26361EF000B7F31E /* SettingsScreen.swift in Sources */,
 				BC5378C02634875800B7F31E /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

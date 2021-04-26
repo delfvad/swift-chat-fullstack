@@ -18,12 +18,33 @@ struct ChatScreen: View {
         }
     }
     
+    private func scrollToLastMessage(proxy: ScrollViewProxy) {
+        if let lastMessage = model.messages.last {
+            withAnimation(.easeOut(duration: 0.4)) {
+                proxy.scrollTo(lastMessage.id, anchor: .bottom)
+            }
+        }
+    }
+    
+    
     var body: some View {
         VStack {
             // Messages list
             ScrollView {
-                Text("Scroll View!")
-                    .padding()
+                ScrollViewReader { proxy in
+                    Text("Messages")
+                        .padding()
+                        .font(Font.body.bold())
+                    LazyVStack(spacing: 8) {
+                        ForEach(model.messages) { message in
+                            Text(message.message)
+                                .id(message.id)
+                        }
+                    }
+                    .onChange(of: model.messages.count) { _ in
+                        scrollToLastMessage(proxy: proxy)
+                    }
+                }
             }
             .onAppear{model.connect()}
             .onDisappear{model.dissconnect()}
@@ -36,7 +57,7 @@ struct ChatScreen: View {
                     .cornerRadius(5)
                 
                 Button(action: onCommit) {
-                    Image(systemName: "arrowshape.turn.up.right")
+                    Image(systemName: "paperplane.fill")
                         .font(.system(size: 20))
                 }
                 .padding()
